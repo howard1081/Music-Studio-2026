@@ -1,0 +1,33 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node / Python
+node_modules/
+__pycache__/
+*.pyc
+
+# Audio / renders (adjust if you DO want these versioned)
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aif
+*.aiff
+*.zip
+*.7z
+
+# Large exports / temp
+dist/
+build/
+tmp/
+temp/
+
+# Registry data (KEEP or REMOVE based on your preference)
+# If you want registry JSONL tracked, delete these two lines:
+60-REGISTRY/data/*.jsonl
