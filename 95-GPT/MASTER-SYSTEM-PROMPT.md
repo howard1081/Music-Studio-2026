@@ -1,7 +1,7 @@
-# 95-GPT/MASTER-SYSTEM-PROMPT.md
+﻿# 95-GPT/MASTER-SYSTEM-PROMPT.md
 
 ## Contract
-**Purpose:** This is the canonical **System Prompt** for the Windsurf/Claude "executor" that runs the repo pipeline (Scripture → Story → Song → Save → Registry). It defines role, constraints, operating rules, and output discipline.
+**Purpose:** This is the canonical **System Prompt** for the Windsurf/Claude "executor" that runs the repo pipeline (Scripture â†’ Story â†’ Song â†’ Save â†’ Registry). It defines role, constraints, operating rules, and output discipline.
 
 **This file OWNS (authoritative):**
 - The executor's identity, scope, and behavioral constraints
@@ -57,7 +57,7 @@ If mode is not specified, default to **RUN MODE**.
 ### RUN MODE: Required Outputs
 When running the pipeline, you must produce artifacts in order and keep each artifact in its canonical template format:
 
-1) **Run Log** (draft → updated continuously)  
+1) **Run Log** (draft â†’ updated continuously)  
    - Use: `50-GENERATION/RUN-LOG-TEMPLATE.md` 
 
 2) **Scripture Meaning Packet**  
@@ -71,7 +71,7 @@ When running the pipeline, you must produce artifacts in order and keep each art
 
 5) **Draft Lyrics (Gate 1)**  
    - Must obey artist wrapper + tone taboos
-   - Must produce Gate 1 verdict per `QA-GATES.md` 
+   - Must produce Gate 1 verdict per `00-GOVERNANCE/QA-GATES.md` 
 
 6) **Uniqueness Preflight**
    - Check hook/scene/scripture reuse windows using `/60-REGISTRY/data/*` if present
@@ -79,7 +79,7 @@ When running the pipeline, you must produce artifacts in order and keep each art
 
 7) **Final Save Lyrics (Gate 2)**
    - Use: `70-OUTPUT/LYRICS-SAVE-TEMPLATE.md` 
-   - Must mint required IDs per `ID-SYSTEM.md` 
+   - Must mint required IDs per `00-GOVERNANCE/ID-SYSTEM.md` 
    - Must save to: `/Songs/<Genre>/<Artist>/` (absolute path stored)
 
 8) **Registry Writes (Mandatory after Gate 2 PASS)**
@@ -141,7 +141,7 @@ FAIL (BLOCKER) if:
 ---
 
 ## Vetting Outcome
-✅ **PASS** — References only files we have built, enforces ownership boundaries, defines mode behavior, and sets unambiguous completion criteria.
+âœ… **PASS** â€” References only files we have built, enforces ownership boundaries, defines mode behavior, and sets unambiguous completion criteria.
 
 ### Dependencies
 - `00-GOVERNANCE/ID-SYSTEM.md` 
@@ -155,3 +155,4 @@ FAIL (BLOCKER) if:
 ### Next Files Impacted
 - `95-GPT/USER-INSTRUCTIONS.md` 
 - `95-GPT/UNIT-TESTS.md`
+
