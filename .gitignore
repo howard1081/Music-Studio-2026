@@ -31,3 +31,5 @@ temp/
 # Registry data (KEEP or REMOVE based on your preference)
 # If you want registry JSONL tracked, delete these two lines:
 60-REGISTRY/data/*.jsonl
+
+[build]/
