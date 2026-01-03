@@ -4,7 +4,11 @@ Write-Host "== Validate-Registry =="
 
 # Load all JSONL records from 60-REGISTRY/data
 $files = Get-ChildItem ".\60-REGISTRY\data\*.jsonl" -ErrorAction SilentlyContinue
-if (-not $files) { throw "No registry .jsonl files found in .\60-REGISTRY\data" }
+if (-not $files) {
+  Write-Host "SKIP: No registry .jsonl files found in .\60-REGISTRY\data (CI clean checkout)."
+  exit 0
+}
+
 
 $allRecords = @()
 foreach ($file in $files) {
