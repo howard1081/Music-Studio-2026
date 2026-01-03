@@ -33,3 +33,7 @@ temp/
 60-REGISTRY/data/*.jsonl
 
 [build]/
+
+# Ignore folder literally named [build]
+\[build\]/
+
